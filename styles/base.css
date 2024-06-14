@@ -1,0 +1,191 @@
+:root {
+  /* Breakpoints */
+  --breakpoint-small: 480px;
+  --breakpoint-medium: 768px;
+  
+  /* Sizes */
+  --height-nav-header: 96px;
+  
+  /* RGB Colors - Use with rgba when opacity is required */
+  --color-rgb-cotton: 247, 244, 236; /* Offwhite */
+  --color-rgb-cream: 248, 237, 214; /* Beige */
+  --color-rgb-eggplant: 178, 76, 115; /* Maroon */
+  --color-rgb-lemon: 251, 215, 74; /* Yellow */
+  --color-rgb-mint: 181, 220, 177; /* Light Green */
+  --color-rgb-peppercorn: 34, 34, 34; /* Black */
+  --color-rgb-pumpkin: 240, 185, 62; /* Orange */
+  --color-rgb-sky: 190, 228, 226; /* Light Blue */
+  --color-rgb-harvest-green-light: 0, 147, 91; /* Lighter Green */
+  --color-rgb-harvest-green: 26, 172, 114; /* Green */
+  --color-rgb-harvest-green-dark: 49, 112, 91; /* Darker Green */
+  --color-rgb-white: 255, 255, 255; /* White */
+  
+  /* Colors - Ready to use at full opacity */
+  --color-cotton: rgba(var(--color-rgb-cotton), 1);
+  --color-cream: rgba(var(--color-rgb-cream), 1);
+  --color-eggplant: rgba(var(--color-rgb-eggplant), 1);
+  --color-lemon: rgba(var(--color-rgb-lemon), 1);
+  --color-mint: rgba(var(--color-rgb-mint), 1);
+  --color-peppercorn: rgba(var(--color-rgb-peppercorn), 1);
+  --color-pumpkin: rgba(var(--color-rgb-pumpkin), 1);
+  --color-sky: rgba(var(--color-rgb-sky), 1);
+  --color-harvest-green-light: rgba(var(--color-rgb-harvest-green-light), 1);
+  --color-harvest-green: rgba(var(--color-rgb-harvest-green), 1);
+  --color-harvest-green-dark: rgba(var(--color-rgb-harvest-green-dark), 1);
+  --color-white: rgba(var(--color-rgb-white), 1);
+  
+  /* Font Families */
+  --font-family-main: "Futura", sans-serif;
+  --font-family-condensed: "Futura Condensed", sans-serif;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: normal;
+  --font-weight-medium: 500;
+  --font-weight-demibold: 600;
+  --font-weight-bold: bold;
+  --font-weight-extrabold: 800;
+  --font-weight-heavy: 900;
+
+  /* Static Font Sizing */
+  --font-size-base: 16px;
+  --font-size-input: 18px;
+  --font-size-secondary: 14px; 
+  --font-size-footnote: 12px; 
+  --font-size-caption: 9px;
+
+  /* Font Line Height */
+  --font-line-height-base: 1.5;
+  --font-line-height-heading: 1.2;
+
+  /* Borders */
+  --border-radius-light: 4px;
+  --border-radius-medium: 6px;
+  --border-radius-heavy: 8px;
+
+  --border-size-light: 1px;
+  --border-size-medium: 2px;
+  --border-size-thick: 4px;
+
+  /* Z-Index Definitions */
+  --z-index-overlays: 1000; /* modals, overlays, dialogs, etc. */
+  --z-index-cart: 800;
+  --z-index-sticky: 600;
+  --z-index-tooltip: 400;
+  --z-index-header: 200;
+  --z-index-base: 1;
+
+  /* Shadows */
+  --shadow-color: 0, 0, 0, 0.6;
+  --shadow-blend-mode: soft-light;
+
+  --shadow-low: 0.3px 0.5px 0.6px rgba(var(--shadow-color)),
+    0.4px 0.8px 0.9px -1.5px rgba(var(--shadow-color)),
+    0.9px 1.9px 2.2px -3px rgba(var(--shadow-color));
+
+  --shadow-medium: 0.3px 0.5px 0.6px rgba(var(--shadow-color)),
+    0.7px 1.4px 1.6px -1px rgba(var(--shadow-color)),
+    1.9px 3.7px 4.4px -2px rgba(var(--shadow-color)),
+    4.7px 9.4px 11px -3px rgba(var(--shadow-color));
+
+  --shadow-high: 0.3px 0.5px 0.6px rgba(var(--shadow-color)),
+    1.1px 2.2px 2.6px -0.4px rgba(var(--shadow-color)),
+    2.1px 4.1px 4.8px -0.9px rgba(var(--shadow-color)),
+    3.5px 7px 8.2px -1.3px rgba(var(--shadow-color)),
+    5.8px 11.7px 13.7px -1.7px rgba(var(--shadow-color)),
+    9.4px 18.8px 22.1px -2.1px rgba(var(--shadow-color)),
+    14.6px 29.2px 34.3px -2.6px rgba(var(--shadow-color)),
+    21.8px 43.5px 51.1px -3px rgba(var(--shadow-color));
+  
+  --flexbox-size-min: 320px;
+  
+}
+
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-base);
+  line-height: var(--font-line-height-base);
+  color: rgb(var(--color-rgb-peppercorn));
+}
+
+header {
+  z-index: var(--z-index-header);
+  height: var(--height-nav-header);
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+}
+
+section {
+  padding: 20px 30px;
+}
+
+section, footer, body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+footer {
+  min-height: 200px; /* Testing Purposes Only */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--font-line-height-heading);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Flex Utilities */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Color classes - Can be used to easily assign colors via class name */
+.bg-color-cotton, .bg-color-offwhite { background-color: var(--color-cotton); }
+.bg-color-cream, .bg-color-beige { background-color: var(--color-cream); }
+.bg-color-eggplant, .bg-color-maroon { background-color: var(--color-eggplant); }
+.bg-color-lemon, .bg-color-yellow { background-color: var(--color-lemon); }
+.bg-color-mint, .bg-color-light-green { background-color: var(--color-mint); }
+.bg-color-peppercorn, .bg-color-black { background-color: var(--color-peppercorn); }
+.bg-color-pumpkin, .bg-color-orange { background-color: var(--color-pumpkin); }
+.bg-color-sky, .bg-color-light-blue { background-color: var(--color-sky); }
+.bg-color-harvest-green-light, .bg-color-lighter-green { background-color: var(--color-harvest-green-light); }
+.bg-color-harvest-green, .bg-color-green { background-color: var(--color-harvest-green); }
+.bg-color-harvest-green-dark, .bg-color-darker-green { background-color: var(--color-harvest-green-dark); }
+.bg-color-white { background-color: var(--color-white); }
+
+.font-color-cotton, .font-color-offwhite { color: var(--color-cotton); }
+.font-color-cream, .font-color-beige { color: var(--color-cream); }
+.font-color-eggplant, .font-color-maroon { color: var(--color-eggplant); }
+.font-color-lemon, .font-color-yellow { color: var(--color-lemon); }
+.font-color-mint, .font-color-light-green { color: var(--color-mint); }
+.font-color-peppercorn, .font-color-black { color: var(--color-peppercorn); }
+.font-color-pumpkin, .font-color-orange { color: var(--color-pumpkin); }
+.font-color-sky, .font-color-light-blue { color: var(--color-sky); }
+.font-color-harvest-green-light, .font-color-lighter-green { color: var(--color-harvest-green-light); }
+.font-color-harvest-green, .font-color-green { color: var(--color-harvest-green); }
+.font-color-harvest-green-dark, .font-color-darker-green { color: var(--color-harvest-green-dark); }
+.font-color-white { color: var(--color-white); }

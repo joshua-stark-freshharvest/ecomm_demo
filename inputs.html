@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Without viewBox Example</title>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/fonts.css" />
+  <link rel="stylesheet" href="styles/typography.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/inputs.css" />
+</head>
+
+<body class="bg-color-cream">
+  <main class="flex-col">
+    <section class="bg-color-sky">
+      <h4>Toggles</h4>
+      <div class="flex-row">
+        <div class="input-group">
+          <input type="checkbox" class="toggle small" name="toggle" id="toggle" />
+          <label for="toggle">Small</label>
+        </div>
+        <div class="input-group">
+          <input type="checkbox" class="toggle" name="toggle" id="toggle" />
+          <label for="toggle">Medium</label>
+        </div>
+        <div class="input-group">
+          <input type="checkbox" class="toggle large" name="toggle" id="toggle" />
+          <label for="toggle">Large</label>
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-color-lemon">
+      <h4>Checkboxes</h4>
+      <div class="flex-row">
+    <div class="input-group">
+      <input type="checkbox" class="checkbox-sm" id="checkbox-small" name="checkbox-small">
+      <label for="checkbox-small">Small Checkbox</label>
+    </div>
+    <div class="input-group">
+      <input type="checkbox" id="checkbox-normal" name="checkbox-normal">
+      <label for="checkbox-normal">Normal Checkbox</label>
+    </div>
+    <div class="input-group">
+      <input type="checkbox" class="checkbox-lg" id="checkbox-large" name="checkbox-large">
+      <label for="checkbox-large">Large Checkbox</label>
+    </div>
+        </div>
+  </section>
+    <section class="bg-color-sky">
+      <h4>Text Input</h4>
+      <div class="flex-row">
+    <div class="input-group">
+      
+      <input class="text-input" type="text" id="text1" placeholder="Enter your first and last name" />
+      <label for="text1">Name</label>
+    </div>
+    <div class="input-group">
+      <input class="text-input" type="email" id="email1" placeholder=" " />
+      <label for="email1">Email Address</label>
+    </div>
+    <div class="input-group">
+      <input class="text-input" type="password" id="password1" placeholder=" " oninput="checkPasswordStrength()" />
+      <label for="password1">Password</label>
+    </div>
+        </div>
+  </section>
+  </main>
+</body>
+
+</html>

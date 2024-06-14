@@ -1,0 +1,29 @@
+.account-nav {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 6px;
+  min-width: 200px;
+  max-width: 275px;
+  padding-left: 10px;
+  height: calc(100vh - var(--height-nav-header));
+}
+
+.account-nav-choice {
+  font-weight: var(--font-weight-demibold);
+  line-height: 1.2;
+  border-radius: var(--border-radius-heavy);
+  padding: 16px 12px;
+  transition: 0.1s ease;
+}
+
+.account-nav-choice:hover {
+  background-color: rgba(var(--color-rgb-lemon), 0.6);
+}
+.account-nav-choice.active {
+  background-color: rgba(var(--color-rgb-lemon), 1);
+}
+iframe {
+  height: calc(100% - 10px);
+  border: none;
+}

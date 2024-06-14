@@ -1,0 +1,199 @@
+.input-group {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text-input {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  padding: 18px 16px 4px 16px;
+  border-radius: var(--border-radius-light);
+  border: var(--border-size-medium) solid var(--color-peppercorn);
+  background: var(--color-white);
+  font-size: var(--font-size-input);
+  font-weight: var(--font-weight-demibold);
+  color: var(--color-peppercorn);
+}
+
+/* Small Text Input */
+.text-input.small {
+  font-size: var(--font-size-base);
+}
+
+.text-input:focus {
+  border: var(--border-size-medium) solid var(--color-peppercorn);
+  outline: none;
+}
+
+/* Placeholder Styles */
+input::placeholder {
+  color: transparent;
+  transition: color 0.1s ease;
+}
+
+input:focus::placeholder {
+  color: rgba(var(--color-rgb-peppercorn), 0.8);
+  opacity: 0.6;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: var(--border-size-medium) solid var(--color-peppercorn);
+  border-radius: var(--border-radius-light);
+  transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"].checkbox-lg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+input[type="checkbox"].checkbox-sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+input[type="checkbox"]:hover:not(:checked) {
+  background-color: rgba(var(--color-rgb-harvest-green-light), 0.5);
+}
+
+input[type="checkbox"]:checked {
+  border: var(--border-size-medium) solid var(--color-peppercorn);
+  background-color: var(--color-harvest-green-light);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  clip-path: polygon(
+    34.541% 79.292%,
+    11.795% 48.78%,
+    4.049% 59.097%,
+    34.541% 100%,
+    100% 12.194%,
+    92.309% 1.877%,
+    34.541% 79.292%
+  );
+  background-color: var(--color-white);
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+input[type="checkbox"].checkbox-sm::before {
+  width: 1rem;
+  height: 1rem;
+}
+
+input[type="checkbox"].checkbox-lg::before {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/* Label Styling */
+label {
+  color: var(--color-peppercorn);
+  font-size: var(--font-size-input);
+  font-weight: var(--font-weight-demibold);
+}
+
+/* Label for Text Input */
+.text-input + label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--color-peppercorn);
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.text-input:focus + label,
+.text-input:not(:placeholder-shown) + label {
+  top: 14px;
+  left: 10px;
+  font-size: 12px;
+  background-color: inherit;
+}
+
+/* Label for Checkbox */
+input[type="checkbox"] + label {
+  position: relative;
+  left: 5px;
+}
+
+
+/* Testing Styles */
+input[type="checkbox"].toggle {
+  --base-color: transparent;
+  --hover-color: transparent;
+  --detail-color: var(--color-peppercorn);
+  --outer-height: 1.5rem;
+  --outer-width: calc(var(--outer-height) * 2); /* Always double the height */
+  --outer-radius: calc(var(--outer-height) / 2); /* Always half the height */
+  --inner-edge-distance: clamp(0.2rem, calc(var(--outer-height) * 0.11), 0.7rem);
+  --inner-size: calc(var(--outer-height) - (var(--inner-edge-distance) * 2));
+  --inner-radius: calc(var(--inner-size) / 2);
+  
+  height: var(--outer-height);
+  width: var(--outer-width);
+  border-radius: var(--outer-radius);
+  background-color: var(--base-color:);
+}
+
+input[type="checkbox"].toggle.small {
+  --outer-height: 1rem;
+}
+
+input[type="checkbox"].toggle.large {
+  --outer-height: 2rem;
+}
+
+input[type="checkbox"].toggle:hover {
+  background-color: var(--hover-color);
+}
+
+input[type="checkbox"].toggle:checked {
+  background-color: var(--base-color);
+}
+
+input[type="checkbox"].toggle::before {
+  position: absolute;
+  left: var(--inner-edge-distance);
+  width: var(--inner-size);
+  height: var(--inner-size);
+  background: var(--detail-color);
+  border-radius: var(--inner-radius);
+  transition: 0.5s;
+  clip-path: none;
+  transform: none;
+}
+
+input[type="checkbox"].toggle:checked::before {
+  left: calc(var(--outer-width) - var(--inner-edge-distance));
+  transform: translateX(-100%);
+}
+
+input[type="checkbox"].toggle:hover::before {
+  width: calc(var(--inner-size) * 1.10);
+}
+
+input[type="checkbox"].toggle:active::before {
+  width: calc(var(--inner-size) * 1.25);
+}
