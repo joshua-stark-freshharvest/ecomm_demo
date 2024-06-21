@@ -116,7 +116,7 @@ const renderHits = (renderOptions, isFirstRender) => {
 								<span class="item-cart-quantity">${itemNum === 0 && i % 3 === 0 ? 'ADD' : itemNum}</span>
 								<div class="btn-round item-cart-add">
 									<svg class="icon">
-										<use xlink:href="/_home/Images/Icons/icons.svg#plus"></use>
+										<use xlink:href="home/Images/Icons/icons.svg#plus"></use>
 									</svg>
 								</div>
 							</div>
