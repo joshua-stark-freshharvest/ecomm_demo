@@ -95,7 +95,7 @@ const renderHits = (renderOptions, isFirstRender) => {
   const markup = Object.entries(groupedItems).map(([categoryLvl0, lvl1Groups]) => {
     const categoryHeaderLvl0 = `<h4 class="category-header">${categoryLvl0}</h4>`;
     const lvl1Markup = Object.entries(lvl1Groups).map(([categoryLvl1, items], i) => {
-      const categoryHeaderLvl1 = `<h5 class="category-header">${categoryLvl1}</h5>`;
+      const categoryHeaderLvl1 = `<h5 class="category-header">${categoryLvl1.split(">")[1].trim()}</h5>`;
       const categoryItems = items.map((hit, itemNum) => {
 							console.log()
 							return`
