@@ -87,7 +87,7 @@ const renderHits = (renderOptions, isFirstRender) => {
 		const removeFromCart = `
 			<div class="btn-round item-cart-remove">
 				<svg class="icon">
-					<use xlink:href="/_home/Images/Icons/icons.svg#minus"></use>
+					<use xlink:href="home/Images/Icons/icons.svg#minus"></use>
 				</svg>
 			</div>
 			`
