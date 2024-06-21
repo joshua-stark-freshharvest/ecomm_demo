@@ -1,0 +1,1123 @@
+/* 
+	Copyright 2024: Vy Technology, LLC
+*/
+
+/******* FONTS *******/
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-Light.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-LightObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-LightObl.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-Book.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-Book.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-BookObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-BookObl.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-Medium.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-MediumObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-MediumObl.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-Demi.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-Demi.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-DemiObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-DemiObl.woff") format("woff");
+	font-weight: 600;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-Bold.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-BoldObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-BoldObl.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-ExtraBold.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-ExtraBoldObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-ExtraBoldObl.woff") format("woff");
+	font-weight: 800;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-Heavy.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-Heavy.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura";
+	src: url("/_home/Fonts/FuturaPT-HeavyObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPT-HeavyObl.woff") format("woff");
+	font-weight: 900;
+	font-style: italic;
+	font-display: auto;
+}
+
+/* Futura Condensed Font Family */
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-Book.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-Book.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-BookObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-BookObl.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-Medium.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-MediumObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-MediumObl.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-Bold.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-BoldObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-BoldObl.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-ExtraBold.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: "Futura Condensed";
+	src: url("/_home/Fonts/FuturaPTCond-ExtraBoldObl.woff2") format("woff2"),
+		url("/_home/Fonts/FuturaPTCond-ExtraBoldObl.woff") format("woff");
+	font-weight: 800;
+	font-style: italic;
+	font-display: auto;
+}
+
+/******* VARIABLES *******/
+:root {
+	/* Breakpoints */
+	--breakpoint-small: 480px;
+	--breakpoint-medium: 768px;
+
+	/* Sizes */
+	--height-nav-header: 96px;
+
+	/* RGB Colors - Use with rgba when opacity is required */
+	--color-rgb-black: 34, 34, 34; /* Pepercorn */
+	--color-rgb-white: 255, 255, 255; /* White */
+	--color-rgb-offwhite: 247, 244, 236; /* Cotton */
+	--color-rgb-beige: 248, 237, 214; /* Cream */
+	--color-rgb-maroon: 178, 76, 115; /* Egglplant */
+	--color-rgb-yellow: 251, 215, 74; /* Lemon */
+	--color-rgb-orange: 240, 185, 62; /* Pumpkin */
+	--color-rgb-blue-light: 190, 228, 226; /* Light Blue */
+	--color-rgb-green-lightest: 0, 147, 91; /* Harvest Green Light */
+	--color-rgb-green-light: 181, 220, 177; /* Mint */
+	--color-rgb-green: 26, 172, 114; /* Harvest Green */
+	--color-rgb-green-dark: 49, 112, 91; /* Harvest Green Dark */
+
+	/* Colors - Ready to use at full opacity */
+	--color-black: rgba(var(--color-rgb-black), 1);
+	--color-white: rgba(var(--color-rgb-white), 1);
+	--color-offwhite: rgba(var(--color-rgb-offwhite), 1);
+	--color-beige: rgba(var(--color-rgb-beige), 1);
+	--color-maroon: rgba(var(--color-rgb-maroon), 1);
+	--color-yellow: rgba(var(--color-rgb-yellow), 1);
+	--color-orange: rgba(var(--color-rgb-orange), 1);
+	--color-blue-light: rgba(var(--color-rgb-blue-light), 1);
+	--color-green-lightest: rgba(var(--color-rgb-green-lightest), 1);
+	--color-green-light: rgba(var(--color-rgb-green-light), 1);
+	--color-green: rgba(var(--color-rgb-green), 1);
+	--color-green-dark: rgba(var(--color-rgb-green-dark), 1);
+
+	/* Font Families */
+	--font-family-main: "Futura", sans-serif;
+	--font-family-condensed: "Futura Condensed", sans-serif;
+
+	/* Font Weights */
+	--font-weight-light: 300;
+	--font-weight-regular: normal;
+	--font-weight-medium: 500;
+	--font-weight-demibold: 600;
+	--font-weight-bold: bold;
+	--font-weight-extrabold: 800;
+	--font-weight-heavy: 900;
+
+	/* Static Font Sizing */
+	--font-size-base: 16px;
+	--font-size-input: 18px;
+	--font-size-secondary: 14px;
+	--font-size-footnote: 12px;
+	--font-size-caption: 9px;
+
+	/* Font Line Height */
+	--font-line-height-base: 1.5;
+	--font-line-height-heading: 1.2;
+
+	/* Borders */
+	--border-radius-light: 4px;
+	--border-radius-medium: 6px;
+	--border-radius-heavy: 8px;
+
+	--border-size-light: 1px;
+	--border-size-medium: 2px;
+	--border-size-thick: 4px;
+
+	/* Z-Index Definitions */
+	--z-index-overlays: 1000; /* modals, overlays, dialogs, etc. */
+	--z-index-cart: 800;
+	--z-index-sticky: 600;
+	--z-index-tooltip: 400;
+	--z-index-header: 200;
+	--z-index-base: 1;
+
+	/* Shadows */
+	--shadow-color: 49deg 13% 55%;
+	--shadow-low: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.39),
+		0.8px 0.8px 1.3px -1.2px hsl(var(--shadow-color) / 0.39),
+		2.1px 2px 3.3px -2.5px hsl(var(--shadow-color) / 0.39);
+	--shadow-medium: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.29),
+		1.5px 1.4px 2.3px -0.8px hsl(var(--shadow-color) / 0.29),
+		3.7px 3.5px 5.7px -1.7px hsl(var(--shadow-color) / 0.29),
+		8.8px 8.5px 13.8px -2.5px hsl(var(--shadow-color) / 0.29);
+	--shadow-high: 0.5px 0.5px 0.8px hsl(var(--shadow-color) / 0.3),
+		2.7px 2.6px 4.2px -0.4px hsl(var(--shadow-color) / 0.3),
+		5.2px 5px 8.1px -0.8px hsl(var(--shadow-color) / 0.3),
+		9px 8.7px 14.1px -1.2px hsl(var(--shadow-color) / 0.3),
+		15.2px 14.7px 23.8px -1.7px hsl(var(--shadow-color) / 0.3),
+		24.9px 24.1px 39px -2.1px hsl(var(--shadow-color) / 0.3),
+		39.2px 37.9px 61.3px -2.5px hsl(var(--shadow-color) / 0.3);
+
+	--flexbox-size-min: 320px;
+
+	/* Shop Settings */
+	--shop-column-gap: 20px;
+	--shop-row-gap: 20px;
+	--shop-items-max: 5;
+	--shop-items-min: 2;
+	--shop-item-line-clamp: 2;
+	--shop-item-min-width: 200px;
+	--shop-item-max-width: 260px;
+}
+
+/******* BODY *******/
+html {
+	font-size: var(--font-size-base);
+}
+
+body {
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-base);
+	line-height: var(--font-line-height-base);
+	color: rgb(var(--color-rgb-black));
+}
+
+/******* SITE LAYOUT *******/
+header {
+	z-index: var(--z-index-header);
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
+section,
+footer,
+body {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+footer {
+	min-height: 200px; /* Testing Purposes Only */
+}
+
+/******* SITE THEME *******/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: var(--font-line-height-heading);
+}
+
+h1 {
+	font-size: clamp(2.5rem, 4vw + 1rem, 5rem);
+}
+
+h2 {
+	font-size: clamp(2rem, 3vw + 0.875rem, 3.812rem);
+}
+
+h3 {
+	font-size: clamp(1.75rem, 2.5vw + 0.875rem, 2.939rem);
+}
+
+h4 {
+	font-size: clamp(1.5rem, 2vw + 0.75rem, 2.25rem);
+}
+
+h5 {
+	font-size: clamp(1.25rem, 1.5vw + 0.625rem, 1.688rem);
+}
+
+h6 {
+	font-size: clamp(1rem, 1vw + 0.5rem, 1.312rem);
+}
+
+a,
+.a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.black {
+	color: var(--color-black);
+}
+
+.background-black {
+	background-color: var(--color-black);
+}
+
+.white {
+	color: var(--color-white);
+}
+
+.background-white {
+	background-color: var(--color-white);
+}
+
+.offwhite {
+	color: var(--color-offwhite);
+}
+
+.background-offwhite {
+	background-color: var(--color-offwhite);
+}
+
+.beige {
+	color: var(--color-beige);
+}
+
+.background-beige {
+	background-color: var(--color-beige);
+}
+
+.maroon {
+	color: var(--color-maroon);
+}
+
+.background-maroon {
+	background-color: var(--color-maroon);
+}
+
+.yellow {
+	color: var(--color-yellow);
+}
+
+.background-yellow {
+	background-color: var(--color-yellow);
+}
+
+.orange {
+	color: var(--color-orange);
+}
+
+.background-orange {
+	background-color: var(--color-orange);
+}
+
+.blue-light {
+	color: var(--color-blue-light);
+}
+
+.background-blue-light {
+	background-color: var(--color-blue-light);
+}
+
+.green-lightest {
+	color: var(--color-green-lightest);
+}
+
+.background-green-lightest {
+	background-color: var(--color-green-lightest);
+}
+
+.green-light {
+	color: var(--color-green-light);
+}
+
+.background-green-light {
+	background-color: var(--color-green-light);
+}
+
+.green {
+	color: var(--color-green);
+}
+
+.background-green {
+	background-color: var(--color-green);
+}
+
+.green-dark {
+	color: var(--color-green-dark);
+}
+
+.background-green-dark {
+	background-color: var(--color-green-dark);
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+.background-transparent {
+	background-color: inherit !important;
+}
+
+.even {
+	background-color: var(--color-white);
+}
+
+.odd {
+	background-color: var(--color-rgb-green-lightest);
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.bold {
+	font-weight: var(--font-weight-bold);
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.hide-all {
+	display: none;
+}
+
+.show-mobile {
+	display: inherit;
+}
+
+.hide-mobile {
+	display: none;
+}
+
+.inline-mobile-hide {
+	display: none;
+}
+
+.inline-mobile-block {
+	display: block;
+}
+
+.btn-round {
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+}
+
+.hero {
+	max-height: 60vh;
+	height: 1000px;
+}
+
+/******* INPUTS, TEXAREA, SELECTS & LABELS *******/
+.input-group {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.text-input {
+	display: flex;
+	width: 100%;
+	max-width: 100vw;
+	padding: 18px 16px 4px 16px;
+	border-radius: var(--border-radius-light);
+	border: var(--border-size-medium) solid var(--color-black);
+	background: var(--color-white);
+	font-size: var(--font-size-input);
+	font-weight: var(--font-weight-demibold);
+	color: var(--color-black);
+}
+
+.text-input.small {
+	font-size: var(--font-size-base);
+}
+
+.text-input:focus {
+	border: var(--border-size-medium) solid var(--color-black);
+	outline: none;
+}
+
+input::placeholder {
+	color: transparent;
+	transition: color 0.1s ease;
+}
+
+input:focus::placeholder {
+	color: rgba(var(--color-rgb-black), 0.8);
+	opacity: 0.6;
+}
+
+input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 2rem;
+	height: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	cursor: pointer;
+	border: var(--border-size-medium) solid var(--color-black);
+	border-radius: var(--border-radius-light);
+	transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"].checkbox-lg {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+input[type="checkbox"].checkbox-sm {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+input[type="checkbox"]:hover:not(:checked) {
+	background-color: rgba(var(--color-rgb-green-lightest), 0.5);
+}
+
+input[type="checkbox"]:checked {
+	border: var(--border-size-medium) solid var(--color-black);
+	background-color: var(--color-green-lightest);
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	width: 1.2rem;
+	height: 1.2rem;
+	clip-path: polygon(
+		34.541% 79.292%,
+		11.795% 48.78%,
+		4.049% 59.097%,
+		34.541% 100%,
+		100% 12.194%,
+		92.309% 1.877%,
+		34.541% 79.292%
+	);
+	background-color: var(--color-white);
+	transform: scale(0);
+	transition: transform 0.3s ease;
+}
+
+input[type="checkbox"].checkbox-sm::before {
+	width: 1rem;
+	height: 1rem;
+}
+
+input[type="checkbox"].checkbox-lg::before {
+	width: 1.75rem;
+	height: 1.75rem;
+}
+
+input[type="checkbox"]:checked::before {
+	transform: scale(1);
+}
+
+input[type="checkbox"] + label {
+	position: relative;
+	left: 5px;
+}
+
+label {
+	color: var(--color-black);
+	font-size: var(--font-size-input);
+	font-weight: var(--font-weight-demibold);
+}
+
+.text-input + label {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+	color: var(--color-black);
+	pointer-events: none;
+	transition: 0.3s ease all;
+}
+
+.text-input:focus + label,
+.text-input:not(:placeholder-shown) + label {
+	top: 14px;
+	left: 10px;
+	font-size: 12px;
+	background-color: inherit;
+}
+
+/******* FLEX *******/
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.break,
+.mobile-break {
+	flex-basis: 100%;
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.mobile-break {
+	margin-bottom: 20px;
+}
+
+.center-middle {
+	justify-content: center;
+	align-items: center;
+}
+/******* Main Navigation *******/
+.main-nav {
+	height: var(--height-nav-header);
+	border-bottom: var(--border-size-medium) solid var(--color-black);
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 0px 50px;
+}
+
+.main-nav-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+	font-weight: var(--font-weight-medium)
+}
+
+.main-nav-account {
+}
+
+.logo {
+}
+/******* ACCOUNT NAVIGATION *******/
+.account-nav {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 75vh;
+	min-width: 200px;
+	padding: 0 20px;
+	order: -10;
+	gap: 12px;
+}
+
+.account-nav-options {
+	position: sticky;
+	top: 125px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.account-nav-option {
+	font-weight: var(--font-weight-demibold);
+	line-height: var(--font-line-height-heading);
+	border-radius: var(--border-radius-heavy);
+	padding: 16px 12px;
+	transition: 0.1s ease;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.account-nav-option:hover {
+	background-color: rgba(var(--color-rgb-yellow), 0.6);
+}
+
+.account-nav-option:active,
+.account-nav-option:target,
+.account-nav-option.active {
+	background-color: var(--color-yellow);
+}
+/******* POPUP *******/
+#PopUpOuter {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(var(--color-rgb-black), 0.6);
+	z-index: var(--z-index-overlays); /* --z-index-overlays = 1000 */
+}
+
+#PopUpInner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--color-black);
+	background-color: var(--color-white);
+	border-radius: 5px;
+	z-index: calc(var(--z-index-overlays + 1)); /* 1001 */
+	text-align: center;
+	padding: 15px;
+	max-height: calc(100% - 80px);
+	overflow: hidden;
+}
+
+#PopUpClose {
+	text-align: right;
+}
+
+#PopUpBody {
+	margin-left: auto;
+	margin-right: auto;
+	z-index: calc(var(--z-index-overlays + 2)); /* 1002 */
+
+	/* 
+				We make this match the height above in #PopUpInner only using vh instead of % 
+				Also, we handle most of this in popup.js so if we are running into scroll issues, start there before changing this
+			*/
+	max-height: calc(100vh - 80px);
+	overflow-y: auto;
+}
+
+/******* DROPDOWN NAVIGATION *******/
+.dropbtn {
+	background-color: var(--color-white);
+	padding: 0;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
+
+a.dropbtn {
+	text-decoration: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 200px;
+	right: -10px;
+	border: 1px solid var(--color-green-lightest);
+	border-radius: 5px;
+}
+
+.dropdown-content-text {
+	right: 0;
+}
+
+.dropdown-content a,
+.dropdown-content .a {
+	padding: 0;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	z-index: 5002;
+}
+
+/******* FAQ ELEMENTS *******/
+.faq-container {
+	max-width: 960px;
+	margin: 0;
+	background-color: var(--color-white);
+	text-align: left;
+}
+
+.faq-question {
+	font-family: var(--font-primary-bold);
+	padding: 20px;
+	border-top: 1px solid var(--color-green-lightest);
+}
+
+.faq-question .faq-up-down {
+	max-width: 40px;
+}
+
+.faq-question svg {
+	width: 20px;
+}
+
+.faq-question svg path {
+	fill: rgba(var(--color-black), 0.5);
+}
+
+.faq-answer {
+	font-family: var(--font-primary-light);
+	padding: 0 60px 20px 20px; /* Make "right padding" match .faq-up-down + .faq-question-svg */
+	display: none;
+}
+
+.faq-answer-show-initial {
+	display: block;
+}
+/******* SHOP NAV *******/
+.shop-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 64px;
+	gap: 3%;
+	margin-bottom: 10px;
+}
+
+.shop-nav-item {
+	font-weight: var(--font-weight-demibold);
+}
+
+.shop-main {
+	display: flex;
+	flex-direction: row;
+	flex: 1 0 auto;
+	max-width: 100%;
+	position: relative;
+}
+.shop-filters {
+	height: 100%;
+	padding: 0 20px;
+	left: -250px;
+	position: absolute;
+	background: var(--color-lemon);
+	width: 250px;
+	transition: transform 0.5s ease;
+}
+.filter-panel {
+	position: sticky;
+	top: 125px;
+}
+.shop-filters-visible {
+	transform: translate(250px, 0);
+}
+
+.shop-filter-icon {
+	height: 24px;
+	width: 24px;
+	margin: 4px;
+}
+
+/******* SHOP *******/
+
+.shop {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.shop-items {
+	--shop-max-width: calc((var(--shop-item-max-width) * var(--shop-items-max)) + (var(--shop-column-gap) * (var(--shop-items-max) - 1)));
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	column-gap: var(--shop-column-gap);
+	row-gap: var(--shop-row-gap);
+	padding: 20px 0px;
+	max-width: var(--shop-max-width);
+}
+/* Unsure if you want this in screens or main - Technically a breakpoint definition but also based on a calculation */
+@media (max-width: 480px) {
+	.shop-items {
+		grid-template-columns: repeat(2, minmax(40%, 1fr));
+	}
+}
+@media (min-width: calc(200px * 5 + 20px * 4 + 20px)) {
+	.shop-items {
+		column-gap: 20px;
+		grid-template-columns: repeat(5, minmax(200px, 1fr));
+	}
+}
+
+/*Shop needs a little fine-tuning, the item display is MOSTLY good to go */
+.shop-item {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.shop-item img {
+	border-radius: var(--border-radius-heavy);
+	aspect-ratio: 3/2;
+	box-shadow: var(--shadow-low);
+}
+
+.shop-item .item-name {
+	--font-size-current: clamp(1rem, 1vw + 0.5rem, 1.312rem);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: var(--font-size-current);
+	height: calc(var(--font-size-current) * 1.2ch);
+	transition: height 0.3s ease-in-out;
+
+	@supports (-webkit-line-clamp: 1) or (line-clamp: 1) {
+		white-space: initial;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-box;
+		display: box;
+		-webkit-line-clamp: var(--shop-item-line-clamp);
+		line-clamp: var(--shop-item-line-clamp);
+		-webkit-box-orient: vertical;
+		box-orient: vertical;
+		height: calc(var(--font-size-current) * 2.4);
+	}
+}
+
+.shop-item .item-vendor {
+	font-size: var(--font-size-secondary);
+	color: var(--color-green-dark);
+	display: block;
+}
+
+.shop-item .item-purchase {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shop-item .item-price-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex: 1 0 50%;
+	gap: 8px;
+}
+
+.item-cart:has(> :last-child:nth-child(2)) {
+	grid-template-columns: 2fr 1fr;
+}
+
+.shop-item .item-cart {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: center;
+	height: 36px;
+	border-radius: 18px;
+	background: var(--color-orange);
+	padding: 0 4px;
+}
+
+.item-cart.optionA {
+	background:none;
+	justify-content: center;
+	font-size: 18px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item-cart.optionB {
+	background: none;
+	border: var(--border-size-medium) solid var(--color-green-dark);
+}
+
+.shop-item .item-cart-add, .shop-item .item-cart-remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-white);
+	height: 28px;
+	width: 28px;
+}
+
+.item-cart.optionA .item-cart-add, .item-cart.optionA .item-cart-remove {
+	background: var(--color-yellow);
+	color: var(--color-black);
+	border: var(--border-size-medium) solid var(--color-black);
+}
+
+.item-cart.optionB .item-cart-add, .item-cart.optionB .item-cart-remove {
+	background: none;
+	color: var(--color-green-dark);
+}
+
+.shop-item .item-cart-add .icon, .shop-item .item-cart-remove .icon {
+	height: 18px;
+}
+
+.item-cart-quantity {
+	font-weight: var(--font-weight-demibold);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+/******* ELEMENT SPECIFIC (use minimally) *******/
+
+/******* PRINT SPECIFIC *******/
+@media print {
+	.page-break {
+		page-break-after: always;
+	}
+}
+/*** TMP STYLES DO NOT ADD TO MAIN ***/
+#searchbox {
+	max-width: 500px;
+}
+#searchbox-container {
+	justify-content: center;
+	align-items: center;
+}
+.hidden {
+	display:none !important;
+}
