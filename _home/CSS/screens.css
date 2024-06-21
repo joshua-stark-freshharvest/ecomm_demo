@@ -1,0 +1,113 @@
+/*** 
+	VERY IMPORTANT screens.css NOTE ABOUT OVERRIDE ORDER
+	Selector must match flexbox.css exactly
+	i.e. If main.css has header div#navitems, screens.css needs to have header div#navitems as JUST #navitems will not override it
+
+	MOBILE <= 699px
+	TABLET = 700px - 1024px
+	TABLET & MOBILE <= 1024px
+	DESKTOP >= 1025px
+***/
+
+/* Custom Breakpoints - MAX: 480px; */
+@media (max-width: 480px) {
+	h1 { font-size: clamp(1.75rem, 4vw + 0.75rem, 3rem); }
+
+	h2 { font-size: clamp(1.5rem, 3vw + 0.625rem, 2.5rem); }
+
+	h3 { font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem); }
+
+	h4 { font-size: clamp(1rem, 2vw + 0.375rem, 1.5rem); }
+
+	h5 { font-size: clamp(0.875rem, 1.5vw + 0.25rem, 1.25rem); }
+
+	h6 { font-size: clamp(0.75rem, 1vw + 0.125rem, 1.125rem); }
+}
+
+/* Custom Breakpoints - MAX: 768px; */
+@media (max-width: 768px) {
+	h1 { font-size: clamp(2rem, 4vw + 0.875rem, 3.5rem); }
+
+	h2 { font-size: clamp(1.75rem, 3vw + 0.75rem, 2.75rem); }
+
+	h3 { font-size: clamp(1.5rem, 2.5vw + 0.625rem, 2.25rem); }
+
+	h4 { font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem); }
+
+	h5 { font-size: clamp(1rem, 1.5vw + 0.375rem, 1.5rem); }
+
+	h6 { font-size: clamp(0.875rem, 1vw + 0.25rem, 1.25rem); }
+}
+
+/* Mobile */
+@media 
+	only screen 												and (max-width: 699px), 
+	only screen and (-webkit-min-device-pixel-ratio: 2)      	and (max-width: 699px),
+	only screen and (   min--moz-device-pixel-ratio: 2)      	and (max-width: 699px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    	and (max-width: 699px),
+	only screen and (        min-device-pixel-ratio: 2)      	and (max-width: 699px),
+	only screen and (                min-resolution: 192dpi) 	and (max-width: 699px),
+	only screen and (                min-resolution: 2dppx)  	and (max-width: 699px)
+{
+	#PopUpInner { width: 80%; }
+
+		#PopUpBody { overflow-x: hidden; }
+}
+
+/* Tablet & Mobile */
+@media 
+	only screen 												and (max-width: 1024px), 
+	only screen and (-webkit-min-device-pixel-ratio: 2)      	and (max-width: 1024px),
+	only screen and (   min--moz-device-pixel-ratio: 2)      	and (max-width: 1024px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    	and (max-width: 1024px),
+	only screen and (        min-device-pixel-ratio: 2)      	and (max-width: 1024px),
+	only screen and (                min-resolution: 192dpi) 	and (max-width: 1024px),
+	only screen and (                min-resolution: 2dppx)  	and (max-width: 1024px)
+{
+	
+}
+
+
+/* Tablet */
+@media
+	only screen 												and (min-width: 700px) and (max-width: 1024px),
+	only screen and (-webkit-min-device-pixel-ratio: 2)      	and (min-width: 700px) and (max-width: 1024px),
+	only screen and (   min--moz-device-pixel-ratio: 2)      	and (min-width: 700px) and (max-width: 1024px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    	and (min-width: 700px) and (max-width: 1024px),
+	only screen and (        min-device-pixel-ratio: 2)      	and (min-width: 700px) and (max-width: 1024px),
+	only screen and (                min-resolution: 192dpi) 	and (min-width: 700px) and (max-width: 1024px),
+	only screen and (                min-resolution: 2dppx)  	and (min-width: 700px) and (max-width: 1024px) 
+{ 
+	#PopUpInner { width: 60%; }
+}
+
+/* Tablet & Desktop */
+@media 
+	only screen 												and (min-width: 700px), 
+	only screen and (-webkit-min-device-pixel-ratio: 2)      	and (min-width: 700px),
+	only screen and (   min--moz-device-pixel-ratio: 2)      	and (min-width: 700px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    	and (min-width: 700px),
+	only screen and (        min-device-pixel-ratio: 2)      	and (min-width: 700px),
+	only screen and (                min-resolution: 192dpi) 	and (min-width: 700px),
+	only screen and (                min-resolution: 2dppx)  	and (min-width: 700px)
+{
+	
+}
+
+/* Desktop */
+@media 
+	only screen 												and (min-width: 1025px), 
+	only screen and (-webkit-min-device-pixel-ratio: 2)      	and (min-width: 1025px),
+	only screen and (   min--moz-device-pixel-ratio: 2)      	and (min-width: 1025px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    	and (min-width: 1025px),
+	only screen and (        min-device-pixel-ratio: 2)      	and (min-width: 1025px),
+	only screen and (                min-resolution: 192dpi) 	and (min-width: 1025px),
+	only screen and (                min-resolution: 2dppx)  	and (min-width: 1025px)
+{
+
+	#PopUpInner {
+		min-width: 400px;
+		width: initial;
+	}
+
+}
