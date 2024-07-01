@@ -85,9 +85,9 @@ const renderHits = (renderOptions, isFirstRender) => {
 			2: 'optionB'
 		}
 		const removeFromCart = `
-			<div class="btn-round item-cart-remove">
+			<div class="btn-round item-order-remove">
 				<svg class="icon">
-					<use xlink:href="home/Images/Icons/icons.svg#minus"></use>
+					<use xlink:href="/_home/Images/Icons/icons.svg#minus"></use>
 				</svg>
 			</div>
 			`
@@ -111,12 +111,12 @@ const renderHits = (renderOptions, isFirstRender) => {
 								<div class="item-price">$${hit.price}</div>
 								<span class="item-uom">6 oz</span>
 							</div>
-							<div class="item-cart ${optionMap[i % 3]}">
+							<div class="item-order ${optionMap[i % 3]}">
 									${itemNum > 0 || i % 3 > 0 ? removeFromCart : ''}
-								<span class="item-cart-quantity">${itemNum === 0 && i % 3 === 0 ? 'ADD' : itemNum}</span>
-								<div class="btn-round item-cart-add">
+								<span class="item-order-quantity">${itemNum === 0 && i % 3 === 0 ? 'ADD' : itemNum}</span>
+								<div class="btn-round item-order-add">
 									<svg class="icon">
-										<use xlink:href="home/Images/Icons/icons.svg#plus"></use>
+										<use xlink:href="/_home/Images/Icons/icons.svg#plus"></use>
 									</svg>
 								</div>
 							</div>
@@ -136,8 +136,8 @@ const renderHits = (renderOptions, isFirstRender) => {
 const customHits = connectHits(renderHits);
 
 search.addWidgets([
-	customSearchBox({
-	}),
+	// customSearchBox({
+	// }),
   customHits({
     container: document.querySelector(".shop"),
   }),
@@ -214,3 +214,13 @@ function showFilters() {
 	filterContainer.classList.toggle('shop-filters-visible');
 }
 
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+// 	document.querySelector('#openModal').addEventListener('click', (e) => {
+// 		document.querySelector("#testModal").showModal();
+// 	});
+// 	document.querySelector('#closeModal').addEventListener('click', (e) => {
+// 		document.querySelector("#testModal").close();
+// 	});
+// }, false);
