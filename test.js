@@ -87,7 +87,7 @@ const renderHits = (renderOptions, isFirstRender) => {
 		const removeFromCart = `
 			<div class="btn-round item-order-remove">
 				<svg class="icon">
-					<use xlink:href="/_home/Images/Icons/icons.svg#minus"></use>
+					<use xlink:href="home/Images/Icons/icons.svg#minus"></use>
 				</svg>
 			</div>
 			`
@@ -116,7 +116,7 @@ const renderHits = (renderOptions, isFirstRender) => {
 								<span class="item-order-quantity">${itemNum === 0 && i % 3 === 0 ? 'ADD' : itemNum}</span>
 								<div class="btn-round item-order-add">
 									<svg class="icon">
-										<use xlink:href="/_home/Images/Icons/icons.svg#plus"></use>
+										<use xlink:href="home/Images/Icons/icons.svg#plus"></use>
 									</svg>
 								</div>
 							</div>
