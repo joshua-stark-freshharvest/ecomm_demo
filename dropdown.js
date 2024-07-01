@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		}
 
-    const debouncedAdjustMenu = debounce(adjustMenu, 50);
+    const debouncedAdjustMenu = debounce(adjustMenu, 10);
     window.addEventListener("resize", debouncedAdjustMenu);
     adjustMenu();
     registerDropdownImageEvents();
